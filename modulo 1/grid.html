@@ -1,0 +1,57 @@
+<!--    
+    Grid
+        Posicionar elementos dentro da caixa
+        Posicionamento Horizontal e Vertical ao mesmo tempo
+        Pode ser flexível ou fixo
+        Cria espaços para os elementos filhos habitarem
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            margin: 0;
+            height: 100vh;
+            grid-template-areas: "header header"
+            "main aside"
+            "footer footer";
+            grid-template-rows: 30px 1fr 40px;
+            grid-template-columns: 1fr 80px;
+        }
+
+        header {
+            grid-area: header;
+            background-color: green;
+        }
+
+        main {
+            background-color: red;
+            grid-area: main;
+        }
+
+        aside {
+            background-color: blue;
+            grid-area: aside;
+        }
+
+        footer {
+            background-color: gray;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <header>Topo</header>
+    <main>Conteúdo</main>
+    <aside>Infos adicionais</aside>
+    <footer>Rodapé</footer>
+</body>
+</html>
