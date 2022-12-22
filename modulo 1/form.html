@@ -94,9 +94,36 @@
             - form
         -->
 
-        br
+        <br>
 
         <button type="submit">Enviar</button>
+
+        <br>
+        <br>
+
+        <!--Datalist-->
+
+        <!--
+            Lista de valores como sugestão a uma tag <input>
+            Valores sugestivos e não obrigatórios
+            Usuários poderão selecionar um dos valores ou colocar um valor diferente da sugestão
+
+            <datalista id='fruitsdata'>
+                option apple
+                option banana
+
+            - Recebe como valor o ID de um datalist residente no mesmo documento
+        -->
+
+        <input type="text" list="frutas" placeholder="Escolha uma fruta">
+
+        <datalist id="frutas">
+            <option value="Maçã"></option>
+            <option value="Banana"></option>
+            <option value="Morango"></option>
+            <option value="Laranja"></option>
+            <option value="Limão"></option>
+        </datalist>
 
 
 
