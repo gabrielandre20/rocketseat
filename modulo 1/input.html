@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Input</title>
+</head>
+<body>
+
+
+    <!--Input-->
+
+    <!--
+
+        <input>
+
+        Atributos
+            . type
+            . name
+            . id
+            - autocomplete
+            - autofocus
+            - disabled
+            - readonly
+            - value
+            - required
+            - placeholder
+
+    -->
+
+    
+    <!-- Password -->
+    <!--
+         Atributos
+            . minlength/maxlength 
+                - Número mínimo ou máximo de caracteres para este campo
+            . size
+                - Número aceitável de caracteres que esse campo deverá conter
+            . pattern
+                - Expressão regular para validar o que está sendo digitado no campo
+                - Segurança de dados
+                - Exemplo: senha com hexadecimais entre 4 e 8 caracteres
+                    pattern="[0-9a-fA-F]{4,8}"
+            . required
+            . inputmode
+                - Altera uso do teclado em smartphone
+                - Exemplo: queremos que o cliente só adicione números
+                    inputmode='numeric'
+            . autocomplete
+                . on
+                    Permite a sugestão de new-password ou current-password
+                . off
+                    Desabilita a opção de autocompletar
+                . new-password
+                    Navegador pode sugerir uma nova senha
+    -->
+
+    <h3>Senha</h3>
+    <input type="password" name="" id="" minlength="5" maxlength="10" size="20" pattern="[0-9a-fA-F]{4,8}" title="Coloque HEX no mínimo 4 caracteres e no máximo 8 caracteres" placeholder=" coloque sua senha" required>
+    <input type="submit" value="Enviar">
+    
+    <br>
+    <br><br>
+
+    <!-- EMail-->
+
+    <!--
+        Atributos
+
+            . Multiple
+                - campo recebe 1 ou mais emails, separados por vírgulas
+            . minlength/ maxlength
+                - Mínimo e máximo de caracteres
+            . Size
+            . pattern
+                - validar o campo
+                - Exemplo: email do domínio rocketseat.com.br apenas
+                    pattern=".+@rocketseat\.com\.br"
+            . list
+                - habilita uso de datalist
+
+    -->
+    <h3> email</h3>
+    <input type="email" name="" id="">
+
+    <!-- URL -->
+
+    <!-- 
+        
+        Atributos 
+        
+        .pattern
+            Exemplo: só colocar domínio .com.br
+                pattern=".*\.com\.br\/.*"
+        . spellcheck
+            - Habilitar a verificação ortográfica para este input
+    -->
+
+    <h3>URL</h3>
+    <input type="url" name="" id="">
+
+    <!-- File -->
+
+    <!--
+        Atributos
+
+        - Value
+            . arquivo a ser enviado
+        - Accept
+            . tipos de arquivos que serão aceitos
+             .doc, .docx, .pdf, .audio/*, image/png
+        - files
+            . lista de arquivo ou arquivos
+        - multiple
+            . permite envio de vários arquivos
+        - Envio dos arquivos
+            . formulário deverá utilizar o método POST e atributo enctype como "multipart/form-data"
+
+    -->
+
+    <h3>Files</h3>
+    <input type="file" name="" id="">
+    <form action="" method="post" enctype="multipart/form-data"></form>
+
+    <!--Color-->
+
+    <!--
+        Atributos
+            . Value: RGB
+        list 
+            - id datalist
+    -->
+
+    <h3>Cor</h3>
+    <input type="color" name="" id="">
+
+    <!--Checkbox-->
+
+    <!--
+        Atributos
+
+        - value
+            . valor que aquele campo contém
+        - checked
+            . deixa campo marcado como padrão
+
+    -->
+
+    <h3>Checkbox</h3>
+    <input type="checkbox" name="" id="">
+
+    <!--Hidden-->
+
+    <!--
+        Atributos
+
+        . invisível ao usuario
+        . enviada com formulario
+        . id = timestamp
+        name = timestamp
+    -->
+    <h3>Hidden</h3>
+    <input type="hidden" name="">
+
+    <!-- Radio -->
+
+    <!--
+        Atributos
+    -->
+
+    <h3>Radio</h3>
+
+    <fieldset>
+        <legend>Tomar um Café?</legend>
+        <label for="sim">Sim</label>
+        <input type="radio" name="café" id="sim" value="Sim">
+
+        <label for="nao">Não</label>
+        <input type="radio" name="café" id="nao" value="Nao">
+    </fieldset>
+
+    <!--Text Area-->
+
+    <!--
+        Atributos
+         . id
+         . name
+         . rows e cols
+         . maxlength e minlength
+         .wrap (define se terá quebra de linnha) soft, hard
+    -->
+    <h3>Área de texto</h3>
+    <label for="msg">Mensagem</label>
+    <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+
+   
+
+</body>
+</html>
