@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+
+
+    <form action="" method="get"></form>
+
+    
+        <!-- 
+            <fieldset>
+            Agrupamento de campos, mesmo propósito, semântico, acessibilidade
+
+            Atributos
+                - disabled
+                    . desabilita todos os elementos internos
+                    . não serão enviados ao submeter o formulário
+                - form
+                    . o id de um formulário ao qual esse fieldset pertence
+                    . não precisa estar dentro do formulário
+                - name
+                    . nome do grupo
+            <legend>
+                - Nome do agrupamento
+                - Primeiro elemento do fieldset
+
+         -->
+
+         <!-- Fieldset dentro do Form-->
+
+         <form action="" method="">
+            <fieldset>
+                <legend>Contato</legend>
+                <label for="">Nome</label>
+                <input type="text" name="" id="">
+            </fieldset>
+         </form>
+
+         <!-- Fieldset fora do Form-->
+
+         <fieldset form="contato">
+            <legend>Contato</legend>
+            <label for="">Nome</label>
+            <input type="tel" name="" id="">
+         </fieldset>
+
+         <form id="contato" action="">
+            <button>Enviar</button>
+         </form>
+
+
+         <br>
+         <br>
+
+         <!-- Label -->
+
+         <!--   
+            Entrada de dados
+
+            Atributos
+                .for
+                    - fazer conexão entre label e tag de entrada de dados
+                    - feita via ID do input
+                    - só funciona com: button, input, meter, output, progress, select, textarea
+         -->
+
+        <label for="nome">Nome Completo</label>
+        <input type="text" id="nome">
+
+        <br>
+
+        <!--Button-->
+
+        <!--
+            <button>
+                Representa um botão
+                Usado para enviar formulários
+                É utilizado pelo user agent
+
+            Atributos comuns
+            - type
+                . submit
+                . reset
+                . button
+            - autofocus
+            - disabeld
+            - name
+            - value
+            - form
+        -->
+
+        br
+
+        <button type="submit">Enviar</button>
+
+
+
+
+
+    
+
+
+
+
+    
+</body>
+</html>
