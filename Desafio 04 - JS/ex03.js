@@ -11,4 +11,14 @@ F = C * 9/5 + 32
 function transformDegree (degree) {
     const celsiusExists = degree.toUpperCase().includes('C')
     const fahrenheitExists = degree.toUpperCase().includes('F')
+
+    if(!celsiusExits && !fahrenheitExists) {
+            throw new Error ('Grau não identificado')
+}
+
+try { 
+    transformDegree('50F')
+    
+} catch {
+
 }
