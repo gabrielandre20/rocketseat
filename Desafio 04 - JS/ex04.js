@@ -49,3 +49,6 @@ const booksByCategory = [
         ],
     }
 ];
+
+console.log(booksByCategory.length)
+console.log(booksByCategory.filter({category}))
