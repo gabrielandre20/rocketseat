@@ -1,0 +1,91 @@
+<!--
+    Propriedades do Flex Container
+
+    - Direção dos itens
+        . Horizontal ou Vertical
+        . 'flex-direction'
+            -valores (row | row-reverse | column | column-reverse)
+    - Multi linhas
+        - flex-wrap
+        - Cada linha, um novo flex container
+    - Alinhamento
+        . Principal
+
+            . justify-content
+            . Alinhamento dos elementos dentro do container
+            . distribuição dos elementos
+        . valores
+            . flex-start
+            . flex-end
+            . center
+            . space-around | space-between | space-evenly
+
+        . Cruzado
+            
+            . align-items
+              . alinhamento dos elementos no eixo cruzado
+            . valores
+               . stretch
+               . flex-start
+               . flex-end
+               . center
+
+    
+    
+    - Espaços entre os itens
+
+       . gap
+         . espaços entre os elementos
+       . valores
+         . unidades de medidas
+            - fixas: px
+            - flexíveis: %, em, rem 
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            /*height: 80vh;*/
+        }
+
+        .box {
+            border: 1px dashed red;
+            display: flex;
+            
+            gap: 2px;
+            
+        }
+
+        .box div {
+            border: 1px solid;
+          
+        }
+    </style>
+</head>
+<body>
+    <!--
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div> -->
+
+    <div class="box">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+    </div>
+</body>
+</html>
+
+
