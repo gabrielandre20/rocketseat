@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout com 2 Colunas</title>
+    <style>
+      
+        .container {
+            height: 95vh;
+            display: flex;
+            gap: 1rem;
+
+        }
+
+        .um {
+            border: 2px solid black;
+            flex-grow: 1;
+        }
+
+        .dois {
+            border: 2px solid red;
+            flex-grow: 3;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="um"></div>
+        <div class="dois"></div>
+    </div>
+</body>
+</html>

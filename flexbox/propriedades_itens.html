@@ -1,0 +1,83 @@
+<!-- Propriedades para os itens
+
+    - flex-basis
+        . altera as larguras dos itens sem precisar usar width em flex-direction 'row'
+        . altera as alturas dos itens sem o height caso a flex-direction seja 'column'
+    - flex-grow
+        . crescimento do item dentro do container em relação aos espaços vazios
+        . padão é igual a zero.
+        . cresce em eixos, quanto maior o número de valor, maior o item cresce em relação aos outros
+    - flex-shrink
+        . encolher item dentro do container
+        . valor padrão = 1
+    - flex
+        . shorthand
+        . pode ter 1, 2 ou os 3 valores
+        . grow, shrink e basis
+    -order
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .page {
+            border: 2px solid;
+            min-height: 100vh;
+            display: flex;
+        }
+
+        aside {
+            background-color: lightgreen;
+            flex-grow: 1;
+        }
+
+        main {
+            background-color: lightblue;
+            flex-grow: 2;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        main section {
+            background-color: lightyellow;
+            flex-grow: 2;
+        }
+
+        main section:nth-child(2) {
+            background-color: lightcoral;
+            flex-grow: 0;
+            flex-basis: 80px;
+        }
+
+        main section:nth-child(3) {
+            background-color: pink;
+            flex-grow: 1;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <aside>Aside</aside>
+        <main>
+            Main
+            <section>Content 1</section>
+            <section>Content 2</section>
+            <section>Content 3</section>
+        </main>
+    </div>
+
+
+    
+</body>
+</html>

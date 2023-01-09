@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 4rem;
+    background-color: lightgray;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    flex-grow: 1;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    
+    
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+ul li:last-child {
+    color: white;
+    background: rgba(21, 73, 185, 0.774);
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
